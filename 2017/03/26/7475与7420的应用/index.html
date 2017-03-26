@@ -15,12 +15,32 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="RJ studio">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="图二的项目主要是以两个芯片（7475与7420）来组建一个抢答器电路，要求能够锁存一个状态与复位功能。
+74HC75芯片
+74HC75芯片是一个4位双稳锁存器（4 BIT BISTABLE LATCH)，当使能G是高电平时，数据D输入上的信息便传送至Q输出；只要使能保持高，Q输出便随数据输入而变。当使能变为低电平时，跳变时数据输入端的信息将保持在Q输出上，直至使能变成高电平为止。
+D端控制非Q端的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目二">
+<meta property="og:url" content="http://yoursite.com/2017/03/26/7475与7420的应用/index.html">
 <meta property="og:site_name" content="RJ studio">
+<meta property="og:description" content="图二的项目主要是以两个芯片（7475与7420）来组建一个抢答器电路，要求能够锁存一个状态与复位功能。
+74HC75芯片
+74HC75芯片是一个4位双稳锁存器（4 BIT BISTABLE LATCH)，当使能G是高电平时，数据D输入上的信息便传送至Q输出；只要使能保持高，Q输出便随数据输入而变。当使能变为低电平时，跳变时数据输入端的信息将保持在Q输出上，直至使能变成高电平为止。
+D端控制非Q端的">
+<meta property="og:image" content="http://www.chinabaike.com/uploads/allimg/130906/05243260W-0.gif">
+<meta property="og:image" content="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=646533e3500fd9f9b41a5d3b4444bf4f/314e251f95cad1c8281be0b87e3e6709c83d5188.jpg">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490515398510&di=0122f9f4b3cc7f5f0b4a0f5107a1e8a9&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D01c2e334895494ee8777071d18c5ccc8%2Feaf81a4c510fd9f9253637e2202dd42a2834a41c.jpg">
+<meta property="og:image" content="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/7af40ad162d9f2d33ac8a794aaec8a136227ccf4.jpg">
+<meta property="og:image" content="http://www.dziuu.com/image/20150108/20150108173632633263.jpg">
+<meta property="og:image" content="http://www.dziuu.com/image/20150108/20150108173727492749.jpg">
+<meta property="og:updated_time" content="2017-03-26T07:04:07.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RJ studio">
+<meta name="twitter:title" content="项目二">
+<meta name="twitter:description" content="图二的项目主要是以两个芯片（7475与7420）来组建一个抢答器电路，要求能够锁存一个状态与复位功能。
+74HC75芯片
+74HC75芯片是一个4位双稳锁存器（4 BIT BISTABLE LATCH)，当使能G是高电平时，数据D输入上的信息便传送至Q输出；只要使能保持高，Q输出便随数据输入而变。当使能变为低电平时，跳变时数据输入端的信息将保持在Q输出上，直至使能变成高电平为止。
+D端控制非Q端的">
+<meta name="twitter:image" content="http://www.chinabaike.com/uploads/allimg/130906/05243260W-0.gif">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,7 +72,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives | RJ studio</title>
+<title>项目二 | RJ studio</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -62,8 +82,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -260,141 +280,188 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-7475与7420的应用" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/26/7475与7420的应用/" class="archive-article-date">
-      <time datetime="2017-03-26T07:02:00.000Z" itemprop="datePublished">03-26</time>
+    <div class="article-meta">
+      <a href="/2017/03/26/7475与7420的应用/" class="article-date">
+      <time datetime="2017-03-26T07:02:00.000Z" itemprop="datePublished">2017-03-26</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/26/7475与7420的应用/">项目二</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      项目二
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实训课/">实训课</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>图二的项目主要是以两个芯片（7475与7420）来组建一个抢答器电路，要求能够锁存一个状态与复位功能。</p>
+<h1 id="74HC75芯片"><a href="#74HC75芯片" class="headerlink" title="74HC75芯片"></a>74HC75芯片</h1><p><img src="http://www.chinabaike.com/uploads/allimg/130906/05243260W-0.gif" alt="image"></p>
+<p>74HC75芯片是一个4位双稳锁存器（4 BIT BISTABLE LATCH)，<br>当使能G是高电平时，数据D输入上的信息便传送至Q输出；只要使能保持高，Q输出便随数据输入而变。当使能变为低电平时，跳变时数据输入端的信息将保持在Q输出上，直至使能变成高电平为止。</p>
+<p>D端控制非Q端的输出；当按键按下时，D端会接收到低电平信号，因此将对应的Q端输出高电平状态，点亮小灯，同时将状态锁存起来。</p>
+<h3 id="Q：4号管脚与13号管脚的作用？"><a href="#Q：4号管脚与13号管脚的作用？" class="headerlink" title="Q：4号管脚与13号管脚的作用？"></a>Q：4号管脚与13号管脚的作用？</h3><h1 id="与非门"><a href="#与非门" class="headerlink" title="与非门"></a>与非门</h1><p>与非门（英语：NAND gate）是数字电路的一种基本逻辑电路。若当输入均为高电平（1），则输出为低电平（0）；若输入中至少有一个为低电平（0），则输出为高电平（1）。</p>
+<h3 id="逻辑表达式逻辑表达式：Y-A·B-’-A’-B’"><a href="#逻辑表达式逻辑表达式：Y-A·B-’-A’-B’" class="headerlink" title="逻辑表达式逻辑表达式：Y=(A·B)’=A’+B’"></a>逻辑表达式逻辑表达式：Y=(A·B)’=A’+B’</h3><p><img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=646533e3500fd9f9b41a5d3b4444bf4f/314e251f95cad1c8281be0b87e3e6709c83d5188.jpg" alt="image"></p>
+<h2 id="74LS20-芯片"><a href="#74LS20-芯片" class="headerlink" title="74LS20 芯片"></a>74LS20 芯片</h2><p>74LS20是常用的双4位 输入与非门集成电路。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1490515398510&amp;di=0122f9f4b3cc7f5f0b4a0f5107a1e8a9&amp;imgtype=0&amp;src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D01c2e334895494ee8777071d18c5ccc8%2Feaf81a4c510fd9f9253637e2202dd42a2834a41c.jpg" alt="image"></p>
+<p>在此电路中的作用是，产生复位信号（高电平）传回给74HC75芯片的复位管脚（4号与13号管脚），让75HC75清空锁存的数据。</p>
+<h1 id="74HC147"><a href="#74HC147" class="headerlink" title="74HC147"></a>74HC147</h1><p><img src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/7af40ad162d9f2d33ac8a794aaec8a136227ccf4.jpg" alt="image"><br>74HC147为 10线－4线优先编码器</p>
+<h1 id="7404"><a href="#7404" class="headerlink" title="7404"></a>7404</h1><p>7404是六个反向器，14号管脚是VCC，7号脚是地。<br><img src="http://www.dziuu.com/image/20150108/20150108173632633263.jpg" alt="image"><br><img src="http://www.dziuu.com/image/20150108/20150108173727492749.jpg" alt="image"></p>
+<h1 id="7448"><a href="#7448" class="headerlink" title="7448"></a>7448</h1><p>7448是共阴极七段LED数码管显示译码驱动器。</p>
+
+      
+    </div>
+    
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/26/GitHub + Hexo 相关问题问题/" class="archive-article-date">
-      <time datetime="2017-03-26T07:01:45.099Z" itemprop="datePublished">03-26</time>
-</a>
-
-
-        </div>
-         
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/" class="archive-article-date">
-      <time datetime="2017-03-22T09:39:00.000Z" itemprop="datePublished">03-22</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/">NE555芯片应用 -- 蜂鸣器驱动电路</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实训课/">实训课</a></li></ul>
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2017/03/26/7475与7420的应用/">项目二</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">ZRJ</a></p>
+        <p><span>Created:</span>2017-03-26, 15:02:00</p>
+        <p><span>Updated:</span>2017-03-26, 15:04:07</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2017/03/26/7475与7420的应用/" title="项目二">http://yoursite.com/2017/03/26/7475与7420的应用/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/03/26/7475与7420的应用/　　By ZRJ" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/03/26/GitHub + Hexo 相关问题问题/">
+                    
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/03/22/hello-world/" class="archive-article-date">
-      <time datetime="2017-03-22T06:36:46.547Z" itemprop="datePublished">03-22</time>
-</a>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#74HC75芯片"><span class="toc-number">1.</span> <span class="toc-text">74HC75芯片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Q：4号管脚与13号管脚的作用？"><span class="toc-number">1.0.1.</span> <span class="toc-text">Q：4号管脚与13号管脚的作用？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#与非门"><span class="toc-number">2.</span> <span class="toc-text">与非门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑表达式逻辑表达式：Y-A·B-’-A’-B’"><span class="toc-number">2.0.1.</span> <span class="toc-text">逻辑表达式逻辑表达式：Y=(A·B)’=A’+B’</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#74LS20-芯片"><span class="toc-number">2.1.</span> <span class="toc-text">74LS20 芯片</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#74HC147"><span class="toc-number">3.</span> <span class="toc-text">74HC147</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7404"><span class="toc-number">4.</span> <span class="toc-text">7404</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7448"><span class="toc-number">5.</span> <span class="toc-text">7448</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
 
 
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"项目二　| RJ studio　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
 
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section class="youyan" id="comments">
+    <script>
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2128069';
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+    <div id="uyan_frame"></div>
+</section>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/03/26/GitHub + Hexo 相关问题问题/" title="Next: ">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/26/7475与7420的应用/">项目二</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/26/GitHub + Hexo 相关问题问题/">GitHub + Hexo 相关问题问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/">NE555芯片应用 -- 蜂鸣器驱动电路</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/22/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

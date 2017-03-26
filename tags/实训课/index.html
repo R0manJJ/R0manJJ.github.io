@@ -134,13 +134,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -258,7 +258,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -277,8 +277,8 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2017/03/22/NE555应用/" class="archive-article-date">
-      <time datetime="2017-03-22T09:41:00.000Z" itemprop="datePublished">03-22</time>
+              <a href="/2017/03/26/7475与7420的应用/" class="archive-article-date">
+      <time datetime="2017-03-26T07:02:00.000Z" itemprop="datePublished">03-26</time>
 </a>
 
 
@@ -286,7 +286,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/NE555应用/">NE555应用</a>
+      <a class="archive-article-title" href="/2017/03/26/7475与7420的应用/">项目二</a>
     </h1>
   
 
@@ -359,7 +359,7 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -368,13 +368,73 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
             </div>
         
+		
     </div>
+		<div id = "mp" style = " position:fixed;left:0px;bottom:0px;width:24px;height:110px;">
+	
+		<div class = "btn">
+			<a id = "ibtn" href = "javascript:add();" style = "height:100%;display:block；float:right;width: 28px; "><img id = "img1" src="img/right-full.png"/></ a>
+		</div>
+		
+		<div class="musicplayer" style="overflow:hidden；margin-right:20px;" >
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="https://music.163.com/outchain/player?type=0&id=637685472&auto=1&height=90"></iframe>
+	
+		</div>
+		
+		
+		
+	</div>
+	
+	
+
+<script type="text/javascript">
+	var imp = document.getElementById('mp'); 
+	var btn = document.getElementById("ibtn");
+	var w = 20;
+	window.onload = function start()
+	{
+		addw();
+		setTimeout(subw,9540);
+	}
+	function addw()
+	{
+		if(w < 354)
+		{
+			w += 1;
+			imp.style.width = w + "px";
+		}
+		else
+		{
+			document.getElementById("img1").src= "img/left-full.png";
+			btn.href = "javascript:subw()";
+			return;
+		}
+		setTimeout(addw,10);
+		
+	}
+	function subw()
+	{
+		if(w>24)
+		{
+			w -= 1;
+			imp.style.width = w +"px";
+		}
+		else
+		{
+			document.getElementById("img1").src= "img/right-full.png";
+			btn.href = "javascript:addw()";
+			return;
+		}
+		setTimeout(subw,10);
+	}
+</script>
+
 </footer>
     </div>
     
@@ -401,9 +461,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window

@@ -14,16 +14,29 @@
 <meta name="author" content="ZRJ" />
 
 
-    
-    
 
-
-<meta property="og:type" content="website">
+<meta name="description" content="搭建过程中遇到问题GitHub + Hexo 搭建博客教程：http://www.jianshu.com/p/465830080ea9
+win10系统下出现“ Not found ：Git”在文件目录里，把文件名改为仓库名，同时执行指令。
+1npm install hexo-deployer-git --save
+hexo出现找不到指令先要将hexo初始化1hexo init
+Not a git">
+<meta property="og:type" content="article">
 <meta property="og:title" content="RJ studio">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/26/GitHub + Hexo 相关问题问题/index.html">
 <meta property="og:site_name" content="RJ studio">
+<meta property="og:description" content="搭建过程中遇到问题GitHub + Hexo 搭建博客教程：http://www.jianshu.com/p/465830080ea9
+win10系统下出现“ Not found ：Git”在文件目录里，把文件名改为仓库名，同时执行指令。
+1npm install hexo-deployer-git --save
+hexo出现找不到指令先要将hexo初始化1hexo init
+Not a git">
+<meta property="og:updated_time" content="2017-03-24T04:51:03.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RJ studio">
+<meta name="twitter:description" content="搭建过程中遇到问题GitHub + Hexo 搭建博客教程：http://www.jianshu.com/p/465830080ea9
+win10系统下出现“ Not found ：Git”在文件目录里，把文件名改为仓库名，同时执行指令。
+1npm install hexo-deployer-git --save
+hexo出现找不到指令先要将hexo初始化1hexo init
+Not a git">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -51,8 +64,6 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
@@ -66,8 +77,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -265,79 +276,7 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-7475与7420的应用" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/03/26/7475与7420的应用/" class="article-date">
-      <time datetime="2017-03-26T07:02:00.000Z" itemprop="datePublished">2017-03-26</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/26/7475与7420的应用/">项目二</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>图二的项目主要是以两个芯片（7475与7420）来组建一个抢答器电路，要求能够锁存一个状态与复位功能。</p>
-<h1 id="74HC75芯片"><a href="#74HC75芯片" class="headerlink" title="74HC75芯片"></a>74HC75芯片</h1><p><img src="http://www.chinabaike.com/uploads/allimg/130906/05243260W-0.gif" alt="image"></p>
-<p>74HC75芯片是一个4位双稳锁存器（4 BIT BISTABLE LATCH)，<br>当使能G是高电平时，数据D输入上的信息便传送至Q输出；只要使能保持高，Q输出便随数据输入而变。当使能变为低电平时，跳变时数据输入端的信息将保持在Q输出上，直至使能变成高电平为止。</p>
-<p>D端控制非Q端的输出；当按键按下时，D端会接收到低电平信号，因此将对应的Q端输出高电平状态，点亮小灯，同时将状态锁存起来。</p>
-<h3 id="Q：4号管脚与13号管脚的作用？"><a href="#Q：4号管脚与13号管脚的作用？" class="headerlink" title="Q：4号管脚与13号管脚的作用？"></a>Q：4号管脚与13号管脚的作用？</h3><h1 id="与非门"><a href="#与非门" class="headerlink" title="与非门"></a>与非门</h1><p>与非门（英语：NAND gate）是数字电路的一种基本逻辑电路。若当输入均为高电平（1），则输出为低电平（0）；若输入中至少有一个为低电平（0），则输出为高电平（1）。</p>
-<h3 id="逻辑表达式逻辑表达式：Y-A·B-’-A’-B’"><a href="#逻辑表达式逻辑表达式：Y-A·B-’-A’-B’" class="headerlink" title="逻辑表达式逻辑表达式：Y=(A·B)’=A’+B’"></a>逻辑表达式逻辑表达式：Y=(A·B)’=A’+B’</h3><p><img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=646533e3500fd9f9b41a5d3b4444bf4f/314e251f95cad1c8281be0b87e3e6709c83d5188.jpg" alt="image"></p>
-<h2 id="74LS20-芯片"><a href="#74LS20-芯片" class="headerlink" title="74LS20 芯片"></a>74LS20 芯片</h2><p>74LS20是常用的双4位 输入与非门集成电路。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1490515398510&amp;di=0122f9f4b3cc7f5f0b4a0f5107a1e8a9&amp;imgtype=0&amp;src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D01c2e334895494ee8777071d18c5ccc8%2Feaf81a4c510fd9f9253637e2202dd42a2834a41c.jpg" alt="image"></p>
-<p>在此电路中的作用是，产生复位信号（高电平）传回给74HC75芯片的复位管脚（4号与13号管脚），让75HC75清空锁存的数据。</p>
-<h1 id="74HC147"><a href="#74HC147" class="headerlink" title="74HC147"></a>74HC147</h1><p><img src="https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/7af40ad162d9f2d33ac8a794aaec8a136227ccf4.jpg" alt="image"><br>74HC147为 10线－4线优先编码器</p>
-<h1 id="7404"><a href="#7404" class="headerlink" title="7404"></a>7404</h1><p>7404是六个反向器，14号管脚是VCC，7号脚是地。<br><img src="http://www.dziuu.com/image/20150108/20150108173632633263.jpg" alt="image"><br><img src="http://www.dziuu.com/image/20150108/20150108173727492749.jpg" alt="image"></p>
-<h1 id="7448"><a href="#7448" class="headerlink" title="7448"></a>7448</h1><p>7448是共阴极七段LED数码管显示译码驱动器。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实训课/">实训课</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-GitHub + Hexo 相关问题问题" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-GitHub + Hexo 相关问题问题" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/03/26/GitHub + Hexo 相关问题问题/" class="article-date">
@@ -392,147 +331,91 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-NE555芯片应用 -- 蜂鸣器驱动电路" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/" class="article-date">
-      <time datetime="2017-03-22T09:39:00.000Z" itemprop="datePublished">2017-03-22</time>
-</a>
-
-
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2017/03/26/GitHub + Hexo 相关问题问题/"></a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">ZRJ</a></p>
+        <p><span>Created:</span>2017-03-26, 15:01:45</p>
+        <p><span>Updated:</span>2017-03-24, 12:51:03</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2017/03/26/GitHub + Hexo 相关问题问题/" title="">http://yoursite.com/2017/03/26/GitHub + Hexo 相关问题问题/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/03/26/GitHub + Hexo 相关问题问题/　　By ZRJ" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/">NE555芯片应用 -- 蜂鸣器驱动电路</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="NE555芯片应用-–-蜂鸣器驱动电路"><a href="#NE555芯片应用-–-蜂鸣器驱动电路" class="headerlink" title="NE555芯片应用 – 蜂鸣器驱动电路"></a>NE555芯片应用 – 蜂鸣器驱动电路</h1><p>  大学里的实训课，要求焊接相应的电路图，而今天的电路图为一个蜂鸣器的驱动电路，用一块NE555、两个10μF的陶瓷电容、一个10μF的电解电容、一个蜂鸣器、两个3.9kΩ的电阻</p>
-<h2 id="1-什么是NE555芯片？"><a href="#1-什么是NE555芯片？" class="headerlink" title="1. 什么是NE555芯片？"></a>1. 什么是NE555芯片？</h2><p>NE555是属于555系列的计时IC的其中的一种型号，555系列IC的接脚功能及运用都是相容的，只是型号不同的因其价格不同其稳定度、省电、可产生的振荡频率也不大相同；</p>
-<p>而555是一个用途很广且相当普遍的计时IC，只需少数的电阻和电容，便可产生数位电路所需的各种不同频率之脉波讯号。</p>
-<p><img src="https://imgsa.baidu.com/baike/c0%3Dbaike72%2C5%2C5%2C72%2C24/sign=e68df487d1c8a786aa27425c0660a258/0b7b02087bf40ad1a14b939e572c11dfa9ecce24.jpg" alt="image"></p>
-<h2 id="2-电路图解析"><a href="#2-电路图解析" class="headerlink" title="2.电路图解析"></a>2.电路图解析</h2><h3 id="a-扬声器为什么要用ne555驱动？"><a href="#a-扬声器为什么要用ne555驱动？" class="headerlink" title="a.扬声器为什么要用ne555驱动？"></a>a.扬声器为什么要用ne555驱动？</h3><p>蜂鸣器需要震荡信号才能够发出声音，而NE555可以产生震荡信号。</p>
-<h3 id="b-电容器的作用？"><a href="#b-电容器的作用？" class="headerlink" title="b.电容器的作用？"></a>b.电容器的作用？</h3>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实训课/">实训课</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/03/22/hello-world/" class="article-date">
-      <time datetime="2017-03-22T06:36:46.547Z" itemprop="datePublished">2017-03-22</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/03/26/7475与7420的应用/">
+                    项目二
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/22/hello-world/">Hello World</a>
-    </h1>
-  
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/">
+                    NE555芯片应用 -- 蜂鸣器驱动电路
+                </a>
+            </div>
+        
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建过程中遇到问题"><span class="toc-number">1.</span> <span class="toc-text">搭建过程中遇到问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#win10系统下出现“-Not-found-：Git”"><span class="toc-number">1.0.1.</span> <span class="toc-text">win10系统下出现“ Not found ：Git”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo出现找不到指令"><span class="toc-number">1.0.2.</span> <span class="toc-text">hexo出现找不到指令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Not-a-git-repository-or-any-of-the-parent-directories-git"><span class="toc-number">1.0.3.</span> <span class="toc-text">Not a git repository (or any of the parent directories): .git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nothing-to-commit-working-directory-clean"><span class="toc-number">1.0.4.</span> <span class="toc-text">nothing to commit, working directory clean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HEXO发布博客流程"><span class="toc-number">1.0.5.</span> <span class="toc-text">HEXO发布博客流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义通过“hexo-g”命令生成的页面"><span class="toc-number">1.0.6.</span> <span class="toc-text">自定义通过“hexo g”命令生成的页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#给网页添加音乐播放器"><span class="toc-number">1.0.7.</span> <span class="toc-text">给网页添加音乐播放器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#播放器-手风琴效果（JS应用）"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">播放器 + 手风琴效果（JS应用）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript函数"><span class="toc-number">2.</span> <span class="toc-text">JavaScript函数</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#getElementById-方法"><span class="toc-number">2.0.0.0.0.1.</span> <span class="toc-text">getElementById()方法</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下拉菜单"><span class="toc-number">2.0.0.0.1.</span> <span class="toc-text">下拉菜单</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Q-有一个ID为“strHref”的超级链接，怎样动态修改其内部文字？"><span class="toc-number">2.0.0.0.1.1.</span> <span class="toc-text">Q:有一个ID为“strHref”的超级链接，怎样动态修改其内部文字？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Q-有一个ID为“strHref”的超级链接，怎样动态修改其内部链接？"><span class="toc-number">2.0.0.0.1.2.</span> <span class="toc-text">Q:有一个ID为“strHref”的超级链接，怎样动态修改其内部链接？</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Q-如何使用JavaScript函数？"><span class="toc-number">2.0.0.0.1.3.</span> <span class="toc-text">Q:如何使用JavaScript函数？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#定时下拉-收起"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">定时下拉/收起</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#setTimeout-code-milisec-方法"><span class="toc-number">2.0.0.1.1.</span> <span class="toc-text">setTimeout(code,milisec)方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#onload-事件"><span class="toc-number">2.0.0.1.2.</span> <span class="toc-text">onload()事件</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Q-要在图片加载完毕后改变其大小，应使用哪个事件？"><span class="toc-number">2.0.0.1.2.1.</span> <span class="toc-text">Q:要在图片加载完毕后改变其大小，应使用哪个事件？</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用jquery实现展开和收起功能"><span class="toc-number">2.0.1.</span> <span class="toc-text">使用jquery实现展开和收起功能</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"　| RJ studio　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -540,9 +423,49 @@
 
 
 
+    
+        <section class="youyan" id="comments">
+    <script>
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2128069';
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
 
-  
-  
+    <div id="uyan_frame"></div>
+</section>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/03/26/7475与7420的应用/" title="Pre: 项目二">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/" title="Next: NE555芯片应用 -- 蜂鸣器驱动电路">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/26/7475与7420的应用/">项目二</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/26/GitHub + Hexo 相关问题问题/">GitHub + Hexo 相关问题问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/22/NE555芯片应用 -- 蜂鸣器驱动电路/">NE555芯片应用 -- 蜂鸣器驱动电路</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/22/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
